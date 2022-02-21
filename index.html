@@ -6,6 +6,7 @@
   <title>Mrabets</title>
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/styles.css"> 
+  <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 </head>
 
 <body>
@@ -13,26 +14,53 @@
     <div class="wrapper">
       <div class="person-card">
         <h1 class="name">Karim Marabet</h1>
-        <h2 class="developer">
-          I'm a software developer from Belarus. Lover of programming.
-        </h2>
+        <div class="developer">
+          <div>
+            I'm a Full Stack Ruby on Rails developer. 
+          </div> <br>
+          
+          
+          <div id ="two">
+            <p>Lover of programming with&nbsp;</p>
+        <div class="box">
+          <ul>
+            <li class="item-1">Ruby</li>
+            <li class="item-2">JS</li>
+            <li class="item-3">Python</li>
+            <li class="item-4">React</li>
+            <li class="item-5">Ruby</li>
+          </ul>  
+        </div>
+        </div>
+          <!-- <div>
+            <h2>Lover of programming with&nbsp;</h2>
+          </div><div data-anijs="if: mouseover, do: swing animated" class="stack"><h2>Ruby</h2></div> -->
+        </div>
       </div>
       <div class="avatar">
         <img src="https://github.com/mrabets.png">
       </div>
     </div>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/karimmarabet/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin fa-2x"></i>
-      </a>
-      <a href="https://github.com/mrabets" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github   fa-2x"></i>
-      </a>
-      <a href="https://medium.com/@mrabets" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-medium   fa-2x"></i>
-      </a>
+      <div data-anijs="if: mouseover, do: swing animated">
+        <a href="https://www.linkedin.com/in/karimmarabet/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+      </div>
+      <div data-anijs="if: mouseover, do: swing animated">
+        <a href="https://github.com/mrabets" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github   fa-2x"></i>
+        </a>
+      </div>
+      <div data-anijs="if: mouseover, do: swing animated">
+        <a href="https://medium.com/@mrabets" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-medium   fa-2x"></i>
+        </a>
+      </div>
     </div>
   </section>
+  <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+  <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
   <script src="js/scripts.js"></script>
   <script src="https://kit.fontawesome.com/a1d72dce01.js" crossorigin="anonymous"></script>
 </body>

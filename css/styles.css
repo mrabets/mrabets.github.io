@@ -9,8 +9,27 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.developer {
+.developer, .lover {
   font-family: "Open Sans",sans-serif;
+}
+
+.myself {
+  margin-bottom: .5rem;
+}
+
+.developer div {
+  float: left;
+}
+
+.lover div {
+  display: inline;
+}
+
+#two {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .name {
@@ -18,7 +37,7 @@ body {
   text-transform: uppercase;
 }
 
-.developer {
+.developer, .lover {
   font-size: clamp(.66rem,-.875rem + 8.333vw,1.5rem);
 }
 
@@ -55,6 +74,10 @@ body {
   margin-top: 5rem;
 }
 
+.social-links div {
+  float: left;
+}
+
 .social-links i {
   padding-right: 1.5rem;
 }
@@ -62,4 +85,69 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.box {
+  text-align: center;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.box::before {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  content: '';
+  height: 5px;
+  position: absolute;
+}
+.box::after {
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  content: '';
+  height: 5px;
+  position: absolute;
+}
+
+p {
+  float: left;
+}
+
+ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  -webkit-animation: scrollUp 4s ease-in-out infinite normal;
+          animation: scrollUp 4s ease-in-out infinite normal;
+}
+ul li {
+  opacity: 1;
+  height: 20px;
+  padding: 10px;
+  list-style: none;
+}
+
+@-webkit-keyframes scrollUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+  }
+}
+
+@keyframes scrollUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+  }
 }
